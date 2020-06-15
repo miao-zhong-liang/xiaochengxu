@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-banner {
+  width: 375rpx;
+  height: 375rpx;
+}
+
+.hero {
+  display: flex;
+}
+
+
+
+.hero-image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.nav-default {
+  color: blue;
+}
+
+.nav-hover {
+  color: red;
+}
+
+.list_item{
+  margin-top:10px;
+  padding:10px;
+  height:80px;
+  border-bottom:1px solid #E8E8E8;
+}
+
+.img{
+  float:left;
+  width:25%;
+  height:80%;
+  
+}
+.img image{
+  width:50px;
+  height:50px;
+  border-radius: 25px;
+}
+
+.hero-details {
+  width:59%;
+  float:right;
+  height:100px;
+  position:relative;
+}
+
+.name{
+  color:#333;
+  margin-left:10px;
+  font-size: 15px;
+}
+
+.alias{
+  color:#333;
+  margin-left:10px;
+  margin-top:10px;
+  font-size: 15px;
+}
+ 
+.title{
+  color:#FF2727;
+  margin-left:10px;
+  margin-top:10px;
+  font-size:15px;
+}

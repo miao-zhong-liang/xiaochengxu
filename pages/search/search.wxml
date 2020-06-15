@@ -1,0 +1,4 @@
+<!--pages/search/search.wxml-->
+<Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+  
+</Tabs>

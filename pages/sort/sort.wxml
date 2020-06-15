@@ -1,0 +1,172 @@
+<!--index.wxml-->
+<Tabs tabs="{{title_tabs}}" bindtabsItemChange="handleTitleTabsItemChange">
+  <view wx:if="{{title_tabs[0].isActive}}">
+    <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+      <view wx:if="{{tabs[0].isActive}}">
+        <block wx:for="{{top_winrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view> 
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+      <view wx:elif="{{tabs[1].isActive}}">
+        <block wx:for="{{jug_winrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view> 
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+      <view wx:elif="{{tabs[2].isActive}}">
+        <block wx:for="{{mid_winrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view> 
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+      <view wx:elif="{{tabs[3].isActive}}">
+        <block wx:for="{{bot_winrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view> 
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+      <view wx:elif="{{tabs[4].isActive}}">
+        <block wx:for="{{sup_winrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view> 
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+    </Tabs>
+  </view>
+  
+  <view wx:if="{{title_tabs[1].isActive}}">
+    <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange">
+        <view wx:if="{{tabs[0].isActive}}">
+        <block wx:for="{{top_pickrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view> 
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+      <view wx:elif="{{tabs[1].isActive}}">
+        <block wx:for="{{jug_pickrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view> 
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+      <view wx:elif="{{tabs[2].isActive}}">
+        <block wx:for="{{mid_pickrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view>  
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+      <view wx:elif="{{tabs[3].isActive}}">
+        <block wx:for="{{bot_pickrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view> 
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+      <view wx:elif="{{tabs[4].isActive}}">
+        <block wx:for="{{sup_pickrate_list}}" wx:for-item="item">
+          <navigator url="../detail/detail?alias={{item.champ_name}}" open-type="navigate">
+            <view class = 'list_item'>
+              <view class='img'>
+                <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+              </view>
+              <view class="hero-details">
+                <view class="name"> 英雄名称：{{item.title}}</view>
+                <view class="alias"> 登场率：{{item.pickrate}}%</view>
+                <view class="alias"> 胜率：{{item.winrate}}%</view> 
+              </view>
+            </view>
+          </navigator>
+        </block>
+      </view>
+    </Tabs>
+  </view>
+</Tabs>

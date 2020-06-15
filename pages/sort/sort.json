@@ -1,0 +1,6 @@
+{
+  "pages": ["pages/pickrate_sort/pickrate_sort"],
+  "usingComponents": {
+    "Tabs":"../../components/Tabs/Tabs"
+  }
+}

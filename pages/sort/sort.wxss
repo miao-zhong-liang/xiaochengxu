@@ -1,0 +1,62 @@
+.swiper-tab{
+  width: 100%;
+  border-bottom: 2rpx solid #777777;
+  text-align: center;
+  line-height: 80rpx;}
+.swiper-tab-list{ font-size: 30rpx;
+  display: inline-block;
+  width: 50%;
+  color: #777777;
+}
+.on{ color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;}
+.swiper-box{ display: block; height: 100%; width: 100%; overflow: hidden; }
+.swiper-box view{
+  text-align: center;
+}
+
+.list_item{
+  margin-top:10px;
+  padding:10px;
+  height:80px;
+  border-bottom:1px solid #E8E8E8;
+}
+
+.img{
+  float:left;
+  width:25%;
+  height:80%;
+  
+}
+.img image{
+  width:50px;
+  height:50px;
+  border-radius: 25px;
+}
+
+.hero-details {
+  width:59%;
+  float:right;
+  height:100px;
+  position:relative;
+}
+
+.name{
+  color:#333;
+  margin-left:10px;
+  font-size: 15px;
+}
+
+.alias{
+  color:#333;
+  margin-left:10px;
+  margin-top:10px;
+  font-size: 15px;
+}
+ 
+.title{
+  color:#FF2727;
+  margin-left:10px;
+  margin-top:10px;
+  font-size:15px;
+}

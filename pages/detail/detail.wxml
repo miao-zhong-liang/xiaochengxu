@@ -1,0 +1,16 @@
+<text>英雄名称：{{champ.Champ_Name}}</text>
+<text>推荐出门装：{{champ.Starter_Items}}</text>
+<text>选取率：{{champ.Starter_Items_PickRate}}</text>
+<text>胜率：{{champ.Starter_Items_WinRate}}</text>
+<text>推荐出装顺序1：{{champ.Recommended_Builds_1}}</text>
+<text>选取率：{{champ.Recommended_Builds_1_PickRate}}</text>
+<text>胜率：{{champ.Recommended_Builds_1_WinRate}}</text>
+<text>推荐出装顺序2：{{champ.Recommended_Builds_2}}</text>
+<text>选取率：{{champ.Recommended_Builds_2_PickRate}}</text>
+<text>胜率：{{champ.Recommended_Builds_2_WinRate}}</text>
+<text>推荐召唤师技能：{{champ.Recommended_Summoner_Spells}}</text>
+<text>选取率：{{champ.Recommended_Summoner_Spells_PickRate}}</text>
+<text>胜率：{{champ.Recommended_Summoner_Spells_WinRate}}</text>
+<text>推荐符文：{{champ.Runes}}</text>
+<text>选取率：{{champ.Runes_PickRate}}</text>
+<text>胜率：{{champ.Runes_WinRate}}</text>

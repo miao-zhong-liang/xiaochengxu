@@ -1,14 +1,38 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+  "pages": [
+    "pages/sort/sort",
+    "pages/about/about",
+    "pages/detail/detail",
+    "pages/search/search"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+  "tabBar": {
+    "list": [
+      {
+        "text": "所有英雄",
+        "pagePath": "pages/about/about",
+        "iconPath": "images/about.png"
+      },
+      {
+        "text": "排名",
+        "pagePath": "pages/sort/sort",
+        "iconPath": "images/sort.png"
+      },
+      {
+        "text": "搜索",
+        "pagePath": "pages/search/search",
+        "iconPath": "images/search.png"
+      }
+    ],
+    "color": "Black",
+    "selectedColor": "DarkSlateGrey"
   },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
 }
