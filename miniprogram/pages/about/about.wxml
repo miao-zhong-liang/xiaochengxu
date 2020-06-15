@@ -1,0 +1,22 @@
+<view class="">
+  <text style="font-weight: bold; font-size: 60rpx">英雄\n</text>
+    <block wx:for="{{allHeroes}}" wx:for-item="item">
+    <navigator url="../detail/detail?alias={{item.alias}}" open-type="navigate">
+    <view class = 'list_item'>
+      <view class='img'>
+        <image src="{{item.imagePath}}"  mode="scaleToFill"/>
+      </view>
+      <view class="hero-details">
+        <navigator style='display: inline; ' url='../detail/detail' hover-class="nav-hover" class='nav-default' open-type="switchTab">{{item.name}}</navigator>
+        <view class = 'alias'>  {{item.alias}}</view>
+        <view class = 'title'> {{item.title}}</view> 
+      </view>
+    </view>
+    </navigator>
+    </block>
+    
+  
+</view>
+
+
+
